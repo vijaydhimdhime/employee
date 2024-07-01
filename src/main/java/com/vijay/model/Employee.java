@@ -11,14 +11,7 @@ import jakarta.persistence.Table;
 @Table(name = "Employee")
 public class Employee {
 	
-//	create table Employee(
-//			empid bigint not null auto_increment,
-//			emp_name varchar(50),
-//			emp_salary float,
-//			emp_age integer,
-//			emp_city varchar(50),
-//			primary key(empid)
-//			);
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long empid;
